@@ -104,7 +104,7 @@ public class Account extends javax.swing.JFrame
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 51), 3), "New Account", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Agency FB", 0, 24), new java.awt.Color(0, 0, 255))); // NOI18N
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Bangladesh", "Napal", "Srilanka", " " }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Bangladesh", "Napal", "Srilanka", "Andhra pradesh" }));
 
         jTextField3.setEditable(false);
 

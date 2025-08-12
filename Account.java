@@ -139,13 +139,13 @@ public class Account extends javax.swing.JFrame
         });
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setText("Caste");
+        jLabel12.setText("Religion");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel14.setText("Sequrity Q.");
+        jLabel14.setText("Sequrity Question.");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Account No.");
+        jLabel2.setText("Account No");
 
         jTextField2.setEditable(false);
 
@@ -153,16 +153,16 @@ public class Account extends javax.swing.JFrame
         jLabel11.setText("Nationality");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel9.setText("Name");
+        jLabel9.setText(" Full Name");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel13.setText("Mobile");
+        jLabel13.setText("Mobile No");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Address");
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/banking_management_system/back.png"))); // NOI18N
-        jButton2.setText("Back");
+        jButton2.setText("PREVIOUS");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -184,9 +184,9 @@ public class Account extends javax.swing.JFrame
         jLabel10.setText("Date of Barth");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel17.setText("Amount ");
+        jLabel17.setText("Amount");
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "What is your name?", "What is your mother maiden name?", " " }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "What is your name?", "What is your mother  name?", " " }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -442,7 +442,7 @@ public class Account extends javax.swing.JFrame
             pst.setString(7, jTextField7.getText());
             pst.setString(8, jTextField2.getText());
             jRadioButton1.setActionCommand("Male");
-            jRadioButton2.setActionCommand("FeMale");
+            jRadioButton2.setActionCommand("Female");
             pst.setString(9, buttonGroup1.getSelection().getActionCommand());
 
             pst.setString(10, jTextField8.getText());
@@ -454,10 +454,11 @@ public class Account extends javax.swing.JFrame
             pst.setString(14, jTextField5.getText());
             pst.execute();
 
-            JOptionPane.showMessageDialog(null, "Congrtz\n Account has been Creted");
+            JOptionPane.showMessageDialog(null, "Congratulations \n your Account has been Creted successfully");
             Bal();
 
-        } catch (SQLException ex) {
+        } 
+        catch (SQLException ex) {
             Logger.getLogger(Account.class.getName()).log(Level.SEVERE, null, ex);
         }
 
